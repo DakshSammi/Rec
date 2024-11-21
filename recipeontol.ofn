@@ -1,0 +1,995 @@
+Prefix(:=<http://www./>)
+Prefix(om:=<http://www.ontology-of-units-of-measure.org/resource/om-2/>)
+Prefix(dct:=<http://purl.org/dc/terms/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(sioc:=<http://rdfs.org/sioc/ns#link>)
+Prefix(schema:=<http://schema.org/>)
+Prefix(opla-sd:=<http://ontologydesignpatterns.org/opla-sd#>)
+Prefix(foodontology:=<https://cosylab.iiitd.edu.in/foodontology/>)
+
+
+Ontology(<https://cosylab.iiitd.edu.in/foodontology/>
+
+Declaration(Class(foodontology:Sub-region))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#BiologicalProcess>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Calories>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Carbohydrate>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#ChemicalProcess>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Continent>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#CookingProcess>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#CookingTIme>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#CoolingProcess>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Country>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#CuttingTools>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Description>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#EatingUtensils>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Energy>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeName>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#FlavorProfile>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Ingredient>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#IngredientURL>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#LactoVegetarian>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Lipid>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#MeasuringTools>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#MechanicalProcess>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#MixingTools>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#NaturalSource>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#NaturalSourceURL>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#OvoLactoVegetarian>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#OvoVegetarian>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Pescetarian>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#PreparationTime>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Protein>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Quantity>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Recipe>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#RecipeURL>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Region>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#ServingUtensils>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Servings>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#SpecializedCookingTools>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#State>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#StoringUtensils>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Temperature>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#TotalTime>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Unit>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Utensils>))
+Declaration(Class(<https://cosylab.iiitd.edu.in/foodontology/#Vegan>))
+Declaration(ObjectProperty(schema:url))
+Declaration(ObjectProperty(foodontology:hasNutritionProfile))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#hasFlavorMolecule>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#dct:identifier>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#dct:source>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#om:hasPhenomenon>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#om:hasUnit>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#om:hasValue>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:additionalType>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:amount>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:category>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:conatinedIn>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:containedIn>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:cookTime>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:cookingMethod>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:countryOfOrigin>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:description>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:nutrition>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:prepTime>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeCategory>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeInstructions>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeYield>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:tool>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:totalTime>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:unitText>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:url>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:value>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#schema:%20tool>))
+Declaration(ObjectProperty(<https://cosylab.iiitd.edu.in/foodontology/#sioc:link>))
+Declaration(DataProperty(foodontology:ingredientID))
+Declaration(DataProperty(foodontology:recipeID))
+Declaration(DataProperty(<https://cosylab.iiitd.edu.in/foodontology/#flavormoleculeID>))
+Declaration(DataProperty(<https://cosylab.iiitd.edu.in/foodontology/#nutritionprofileID>))
+Declaration(NamedIndividual(foodontology:Bake))
+Declaration(NamedIndividual(foodontology:Barbecue))
+Declaration(NamedIndividual(foodontology:Blanch))
+Declaration(NamedIndividual(foodontology:Boil))
+Declaration(NamedIndividual(foodontology:Braise))
+Declaration(NamedIndividual(foodontology:Broil))
+Declaration(NamedIndividual(foodontology:Bubble))
+Declaration(NamedIndividual(foodontology:Bubbling))
+Declaration(NamedIndividual(foodontology:Burn))
+Declaration(NamedIndividual(foodontology:Caramelize))
+Declaration(NamedIndividual(foodontology:Char))
+Declaration(NamedIndividual(foodontology:Condensed))
+Declaration(NamedIndividual(foodontology:Cook))
+Declaration(NamedIndividual(foodontology:CrockPot))
+Declaration(NamedIndividual(foodontology:DeepFry))
+Declaration(NamedIndividual(foodontology:Defrost))
+Declaration(NamedIndividual(foodontology:Dry))
+Declaration(NamedIndividual(foodontology:Evaporate))
+Declaration(NamedIndividual(foodontology:Evaporated))
+Declaration(NamedIndividual(foodontology:Foam))
+Declaration(NamedIndividual(foodontology:Heat))
+Declaration(NamedIndividual(foodontology:Melt))
+Declaration(NamedIndividual(foodontology:Overcook))
+Declaration(NamedIndividual(foodontology:Pan-fry))
+Declaration(NamedIndividual(foodontology:Pans))
+Declaration(NamedIndividual(foodontology:Parboil))
+Declaration(NamedIndividual(foodontology:Poach))
+Declaration(NamedIndividual(foodontology:Pop))
+Declaration(NamedIndividual(foodontology:Pots))
+Declaration(NamedIndividual(foodontology:Pre-heat))
+Declaration(NamedIndividual(foodontology:Preheat))
+Declaration(NamedIndividual(foodontology:Process))
+Declaration(NamedIndividual(foodontology:Reduce))
+Declaration(NamedIndividual(foodontology:Reheat))
+Declaration(NamedIndividual(foodontology:Roast))
+Declaration(NamedIndividual(foodontology:Saute))
+Declaration(NamedIndividual(foodontology:Scald))
+Declaration(NamedIndividual(foodontology:Scorching))
+Declaration(NamedIndividual(foodontology:Sear))
+Declaration(NamedIndividual(foodontology:Simmer))
+Declaration(NamedIndividual(foodontology:Sizzle))
+Declaration(NamedIndividual(foodontology:Smoke))
+Declaration(NamedIndividual(foodontology:Smoking))
+Declaration(NamedIndividual(foodontology:Soften))
+Declaration(NamedIndividual(foodontology:Splutter))
+Declaration(NamedIndividual(foodontology:Steam))
+Declaration(NamedIndividual(foodontology:Sterilize))
+Declaration(NamedIndividual(foodontology:Stew))
+Declaration(NamedIndividual(foodontology:Stir-fry))
+Declaration(NamedIndividual(foodontology:Sweat))
+Declaration(NamedIndividual(foodontology:Thaw))
+Declaration(NamedIndividual(foodontology:Toast))
+Declaration(NamedIndividual(foodontology:Warm))
+Declaration(NamedIndividual(foodontology:Wilt))
+Declaration(NamedIndividual(foodontology:Wok))
+Declaration(NamedIndividual(foodontology:Wrapping_Supplies))
+Declaration(AnnotationProperty(opla-sd:entityPosition))
+Declaration(AnnotationProperty(opla-sd:entityPositionX))
+Declaration(AnnotationProperty(opla-sd:entityPositionY))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: schema:url (schema:url)
+
+ObjectPropertyDomain(schema:url <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+ObjectPropertyDomain(schema:url <https://cosylab.iiitd.edu.in/foodontology/#NaturalSource>)
+ObjectPropertyRange(schema:url <https://cosylab.iiitd.edu.in/foodontology/#NaturalSourceURL>)
+
+# Object Property: foodontology:hasNutritionProfile (foodontology:hasNutritionProfile)
+
+ObjectPropertyDomain(foodontology:hasNutritionProfile <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+ObjectPropertyRange(foodontology:hasNutritionProfile <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#hasFlavorMolecule> (<https://cosylab.iiitd.edu.in/foodontology/#hasFlavorMolecule>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#hasFlavorMolecule> <https://cosylab.iiitd.edu.in/foodontology/#NaturalSource>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#hasFlavorMolecule> <https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#dct:identifier> (<https://cosylab.iiitd.edu.in/foodontology/#dct:identifier>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#dct:identifier> <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#dct:identifier> <https://cosylab.iiitd.edu.in/foodontology/#RecipeURL>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#dct:source> (<https://cosylab.iiitd.edu.in/foodontology/#dct:source>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#dct:source> <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#dct:source> <https://cosylab.iiitd.edu.in/foodontology/#NaturalSource>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#om:hasPhenomenon> (<https://cosylab.iiitd.edu.in/foodontology/#om:hasPhenomenon>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#om:hasPhenomenon> <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#om:hasPhenomenon> <https://cosylab.iiitd.edu.in/foodontology/#State>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#om:hasValue> (<https://cosylab.iiitd.edu.in/foodontology/#om:hasValue>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#om:hasValue> <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#om:hasValue> <https://cosylab.iiitd.edu.in/foodontology/#Temperature>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:category> (<https://cosylab.iiitd.edu.in/foodontology/#schema:category>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:category> <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:category> <https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:conatinedIn> (<https://cosylab.iiitd.edu.in/foodontology/#schema:conatinedIn>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:conatinedIn> <https://cosylab.iiitd.edu.in/foodontology/#Country>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:conatinedIn> <https://cosylab.iiitd.edu.in/foodontology/#Region>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:containedIn> (<https://cosylab.iiitd.edu.in/foodontology/#schema:containedIn>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:containedIn> <https://cosylab.iiitd.edu.in/foodontology/#Region>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:containedIn> <https://cosylab.iiitd.edu.in/foodontology/#Continent>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:cookTime> (<https://cosylab.iiitd.edu.in/foodontology/#schema:cookTime>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:cookTime> <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:cookTime> <https://cosylab.iiitd.edu.in/foodontology/#CookingTIme>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:cookingMethod> (<https://cosylab.iiitd.edu.in/foodontology/#schema:cookingMethod>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:cookingMethod> <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:cookingMethod> <https://cosylab.iiitd.edu.in/foodontology/#CookingProcess>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:countryOfOrigin> (<https://cosylab.iiitd.edu.in/foodontology/#schema:countryOfOrigin>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:countryOfOrigin> <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:countryOfOrigin> <https://cosylab.iiitd.edu.in/foodontology/#Country>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:description> (<https://cosylab.iiitd.edu.in/foodontology/#schema:description>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:description> <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:description> <https://cosylab.iiitd.edu.in/foodontology/#Description>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:nutrition> (<https://cosylab.iiitd.edu.in/foodontology/#schema:nutrition>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:nutrition> <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:nutrition> <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:recipeCategory> (<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeCategory>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeCategory> <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeCategory> <https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:recipeInstructions> (<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeInstructions>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeInstructions> <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeInstructions> <https://cosylab.iiitd.edu.in/foodontology/#Description>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:recipeYield> (<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeYield>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeYield> <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeYield> <https://cosylab.iiitd.edu.in/foodontology/#Servings>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:unitText> (<https://cosylab.iiitd.edu.in/foodontology/#schema:unitText>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:unitText> <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:unitText> <https://cosylab.iiitd.edu.in/foodontology/#Unit>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:url> (<https://cosylab.iiitd.edu.in/foodontology/#schema:url>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:url> <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:url> <https://cosylab.iiitd.edu.in/foodontology/#IngredientURL>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:value> (<https://cosylab.iiitd.edu.in/foodontology/#schema:value>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:value> <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:value> <https://cosylab.iiitd.edu.in/foodontology/#Quantity>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#schema:%20tool> (<https://cosylab.iiitd.edu.in/foodontology/#schema:%20tool>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#schema:%20tool> <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#schema:%20tool> <https://cosylab.iiitd.edu.in/foodontology/#Utensils>)
+
+# Object Property: <https://cosylab.iiitd.edu.in/foodontology/#sioc:link> (<https://cosylab.iiitd.edu.in/foodontology/#sioc:link>)
+
+ObjectPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#sioc:link> <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+ObjectPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#sioc:link> <https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: foodontology:ingredientID (foodontology:ingredientID)
+
+AnnotationAssertion(opla-sd:entityPosition foodontology:ingredientID _:genid2147483763)
+DataPropertyDomain(foodontology:ingredientID <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+DataPropertyRange(foodontology:ingredientID xsd:integer)
+
+# Data Property: foodontology:recipeID (foodontology:recipeID)
+
+AnnotationAssertion(opla-sd:entityPosition foodontology:recipeID _:genid2147483766)
+DataPropertyDomain(foodontology:recipeID <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+DataPropertyRange(foodontology:recipeID xsd:integer)
+
+# Data Property: <https://cosylab.iiitd.edu.in/foodontology/#flavormoleculeID> (<https://cosylab.iiitd.edu.in/foodontology/#flavormoleculeID>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#flavormoleculeID> _:genid2147483786)
+DataPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#flavormoleculeID> <https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile>)
+DataPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#flavormoleculeID> xsd:int)
+
+# Data Property: <https://cosylab.iiitd.edu.in/foodontology/#nutritionprofileID> (<https://cosylab.iiitd.edu.in/foodontology/#nutritionprofileID>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#nutritionprofileID> _:genid2147483784)
+DataPropertyDomain(<https://cosylab.iiitd.edu.in/foodontology/#nutritionprofileID> <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>)
+DataPropertyRange(<https://cosylab.iiitd.edu.in/foodontology/#nutritionprofileID> xsd:int)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: foodontology:Sub-region (foodontology:Sub-region)
+
+AnnotationAssertion(opla-sd:entityPosition foodontology:Sub-region _:genid2147483792)
+EquivalentClasses(foodontology:Sub-region <https://cosylab.iiitd.edu.in/foodontology/#Country>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#BiologicalProcess> (<https://cosylab.iiitd.edu.in/foodontology/#BiologicalProcess>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#BiologicalProcess> _:genid2147483787)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#BiologicalProcess> <https://cosylab.iiitd.edu.in/foodontology/#CookingProcess>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Calories> (<https://cosylab.iiitd.edu.in/foodontology/#Calories>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Calories> _:genid2147483780)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Calories> <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Carbohydrate> (<https://cosylab.iiitd.edu.in/foodontology/#Carbohydrate>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Carbohydrate> _:genid2147483746)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Carbohydrate> <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#ChemicalProcess> (<https://cosylab.iiitd.edu.in/foodontology/#ChemicalProcess>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#ChemicalProcess> _:genid2147483781)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#ChemicalProcess> <https://cosylab.iiitd.edu.in/foodontology/#CookingProcess>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Continent> (<https://cosylab.iiitd.edu.in/foodontology/#Continent>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Continent> _:genid2147483785)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#CookingProcess> (<https://cosylab.iiitd.edu.in/foodontology/#CookingProcess>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#CookingProcess> _:genid2147483744)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#CookingTIme> (<https://cosylab.iiitd.edu.in/foodontology/#CookingTIme>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#CookingTIme> _:genid2147483758)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#CookingTIme> <https://cosylab.iiitd.edu.in/foodontology/#TotalTime>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils> (<https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils> _:genid2147483739)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils> <https://cosylab.iiitd.edu.in/foodontology/#Utensils>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#CoolingProcess> (<https://cosylab.iiitd.edu.in/foodontology/#CoolingProcess>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#CoolingProcess> _:genid2147483783)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#CoolingProcess> <https://cosylab.iiitd.edu.in/foodontology/#CookingProcess>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Country> (<https://cosylab.iiitd.edu.in/foodontology/#Country>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Country> _:genid2147483761)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#CuttingTools> (<https://cosylab.iiitd.edu.in/foodontology/#CuttingTools>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#CuttingTools> _:genid2147483772)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#CuttingTools> <https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Description> (<https://cosylab.iiitd.edu.in/foodontology/#Description>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Description> _:genid2147483741)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#EatingUtensils> (<https://cosylab.iiitd.edu.in/foodontology/#EatingUtensils>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#EatingUtensils> _:genid2147483749)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#EatingUtensils> <https://cosylab.iiitd.edu.in/foodontology/#Utensils>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Energy> (<https://cosylab.iiitd.edu.in/foodontology/#Energy>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Energy> _:genid2147483747)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Energy> <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeName> (<https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeName>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeName> _:genid2147483752)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeName> <https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile> (<https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile> _:genid2147483755)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#FlavorProfile> (<https://cosylab.iiitd.edu.in/foodontology/#FlavorProfile>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#FlavorProfile> _:genid2147483790)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#FlavorProfile> <https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> (<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> _:genid2147483750)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> <https://cosylab.iiitd.edu.in/foodontology/#CookingProcess>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Ingredient> (<https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Ingredient> _:genid2147483775)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Ingredient> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#dct:source> <https://cosylab.iiitd.edu.in/foodontology/#NaturalSource>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Ingredient> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#om:hasPhenomenon> <https://cosylab.iiitd.edu.in/foodontology/#State>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Ingredient> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#om:hasValue> <https://cosylab.iiitd.edu.in/foodontology/#Temperature>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Ingredient> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:category> <https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Ingredient> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:unitText> <https://cosylab.iiitd.edu.in/foodontology/#Unit>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Ingredient> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:url> <https://cosylab.iiitd.edu.in/foodontology/#IngredientURL>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Ingredient> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:value> <https://cosylab.iiitd.edu.in/foodontology/#Quantity>))
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory> (<https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory> _:genid2147483753)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#IngredientURL> (<https://cosylab.iiitd.edu.in/foodontology/#IngredientURL>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#IngredientURL> _:genid2147483751)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#LactoVegetarian> (<https://cosylab.iiitd.edu.in/foodontology/#LactoVegetarian>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#LactoVegetarian> _:genid2147483788)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#LactoVegetarian> <https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Lipid> (<https://cosylab.iiitd.edu.in/foodontology/#Lipid>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Lipid> _:genid2147483773)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Lipid> <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#MeasuringTools> (<https://cosylab.iiitd.edu.in/foodontology/#MeasuringTools>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#MeasuringTools> _:genid2147483742)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#MeasuringTools> <https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#MechanicalProcess> (<https://cosylab.iiitd.edu.in/foodontology/#MechanicalProcess>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#MechanicalProcess> _:genid2147483782)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#MechanicalProcess> <https://cosylab.iiitd.edu.in/foodontology/#CookingProcess>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#MixingTools> (<https://cosylab.iiitd.edu.in/foodontology/#MixingTools>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#MixingTools> _:genid2147483767)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#MixingTools> <https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#NaturalSource> (<https://cosylab.iiitd.edu.in/foodontology/#NaturalSource>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#NaturalSource> _:genid2147483745)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#NaturalSource> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#hasFlavorMolecule> <https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile>))
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#NaturalSourceURL> (<https://cosylab.iiitd.edu.in/foodontology/#NaturalSourceURL>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#NaturalSourceURL> _:genid2147483754)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile> (<https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile> _:genid2147483748)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#OvoLactoVegetarian> (<https://cosylab.iiitd.edu.in/foodontology/#OvoLactoVegetarian>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#OvoLactoVegetarian> _:genid2147483764)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#OvoLactoVegetarian> <https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#OvoVegetarian> (<https://cosylab.iiitd.edu.in/foodontology/#OvoVegetarian>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#OvoVegetarian> _:genid2147483770)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#OvoVegetarian> <https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Pescetarian> (<https://cosylab.iiitd.edu.in/foodontology/#Pescetarian>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Pescetarian> _:genid2147483793)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Pescetarian> <https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#PreparationTime> (<https://cosylab.iiitd.edu.in/foodontology/#PreparationTime>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#PreparationTime> _:genid2147483789)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#PreparationTime> <https://cosylab.iiitd.edu.in/foodontology/#TotalTime>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils> (<https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils> _:genid2147483757)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#PreparationUtensils> <https://cosylab.iiitd.edu.in/foodontology/#Utensils>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Protein> (<https://cosylab.iiitd.edu.in/foodontology/#Protein>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Protein> _:genid2147483776)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Protein> <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Quantity> (<https://cosylab.iiitd.edu.in/foodontology/#Quantity>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Quantity> _:genid2147483777)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Recipe> (<https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Recipe> _:genid2147483771)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Recipe> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#dct:identifier> <https://cosylab.iiitd.edu.in/foodontology/#RecipeURL>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Recipe> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:cookTime> <https://cosylab.iiitd.edu.in/foodontology/#CookingTIme>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Recipe> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:cookingMethod> <https://cosylab.iiitd.edu.in/foodontology/#CookingProcess>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Recipe> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:nutrition> <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Recipe> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeCategory> <https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Recipe> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeYield> <https://cosylab.iiitd.edu.in/foodontology/#Servings>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Recipe> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:%20tool> <https://cosylab.iiitd.edu.in/foodontology/#Utensils>))
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Recipe> ObjectAllValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#sioc:link> <https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL>))
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory> (<https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory> _:genid2147483791)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL> (<https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL> _:genid2147483756)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#RecipeURL> (<https://cosylab.iiitd.edu.in/foodontology/#RecipeURL>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#RecipeURL> _:genid2147483774)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Region> (<https://cosylab.iiitd.edu.in/foodontology/#Region>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Region> _:genid2147483762)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#ServingUtensils> (<https://cosylab.iiitd.edu.in/foodontology/#ServingUtensils>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#ServingUtensils> _:genid2147483779)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#ServingUtensils> <https://cosylab.iiitd.edu.in/foodontology/#Utensils>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Servings> (<https://cosylab.iiitd.edu.in/foodontology/#Servings>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Servings> _:genid2147483768)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#SpecializedCookingTools> (<https://cosylab.iiitd.edu.in/foodontology/#SpecializedCookingTools>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#SpecializedCookingTools> _:genid2147483743)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#SpecializedCookingTools> <https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#State> (<https://cosylab.iiitd.edu.in/foodontology/#State>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#State> _:genid2147483760)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#StoringUtensils> (<https://cosylab.iiitd.edu.in/foodontology/#StoringUtensils>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#StoringUtensils> _:genid2147483778)
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#StoringUtensils> <https://cosylab.iiitd.edu.in/foodontology/#Utensils>)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Temperature> (<https://cosylab.iiitd.edu.in/foodontology/#Temperature>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Temperature> _:genid2147483740)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#TotalTime> (<https://cosylab.iiitd.edu.in/foodontology/#TotalTime>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#TotalTime> _:genid2147483769)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Unit> (<https://cosylab.iiitd.edu.in/foodontology/#Unit>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Unit> _:genid2147483765)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Utensils> (<https://cosylab.iiitd.edu.in/foodontology/#Utensils>)
+
+AnnotationAssertion(opla-sd:entityPosition <https://cosylab.iiitd.edu.in/foodontology/#Utensils> _:genid2147483759)
+
+# Class: <https://cosylab.iiitd.edu.in/foodontology/#Vegan> (<https://cosylab.iiitd.edu.in/foodontology/#Vegan>)
+
+SubClassOf(<https://cosylab.iiitd.edu.in/foodontology/#Vegan> <https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: foodontology:Bake (foodontology:Bake)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Bake)
+
+# Individual: foodontology:Barbecue (foodontology:Barbecue)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Barbecue)
+
+# Individual: foodontology:Blanch (foodontology:Blanch)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Blanch)
+
+# Individual: foodontology:Boil (foodontology:Boil)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Boil)
+
+# Individual: foodontology:Braise (foodontology:Braise)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Braise)
+
+# Individual: foodontology:Broil (foodontology:Broil)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Broil)
+
+# Individual: foodontology:Bubble (foodontology:Bubble)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Bubble)
+SameIndividual(foodontology:Bubble foodontology:Bubbling)
+
+# Individual: foodontology:Bubbling (foodontology:Bubbling)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Bubbling)
+
+# Individual: foodontology:Burn (foodontology:Burn)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Burn)
+
+# Individual: foodontology:Caramelize (foodontology:Caramelize)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Caramelize)
+
+# Individual: foodontology:Char (foodontology:Char)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Char)
+
+# Individual: foodontology:Condensed (foodontology:Condensed)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Condensed)
+
+# Individual: foodontology:Cook (foodontology:Cook)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Cook)
+
+# Individual: foodontology:CrockPot (foodontology:CrockPot)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:CrockPot)
+
+# Individual: foodontology:DeepFry (foodontology:DeepFry)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:DeepFry)
+
+# Individual: foodontology:Defrost (foodontology:Defrost)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Defrost)
+
+# Individual: foodontology:Dry (foodontology:Dry)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Dry)
+
+# Individual: foodontology:Evaporate (foodontology:Evaporate)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Evaporate)
+SameIndividual(foodontology:Evaporate foodontology:Evaporated)
+
+# Individual: foodontology:Evaporated (foodontology:Evaporated)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Evaporated)
+
+# Individual: foodontology:Foam (foodontology:Foam)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Foam)
+
+# Individual: foodontology:Heat (foodontology:Heat)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Heat)
+
+# Individual: foodontology:Melt (foodontology:Melt)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Melt)
+
+# Individual: foodontology:Overcook (foodontology:Overcook)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Overcook)
+
+# Individual: foodontology:Pan-fry (foodontology:Pan-fry)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Pan-fry)
+
+# Individual: foodontology:Pans (foodontology:Pans)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils> foodontology:Pans)
+
+# Individual: foodontology:Parboil (foodontology:Parboil)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Parboil)
+
+# Individual: foodontology:Poach (foodontology:Poach)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Poach)
+
+# Individual: foodontology:Pop (foodontology:Pop)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Pop)
+
+# Individual: foodontology:Pots (foodontology:Pots)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#CookingUtensils> foodontology:Pots)
+
+# Individual: foodontology:Pre-heat (foodontology:Pre-heat)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Pre-heat)
+SameIndividual(foodontology:Pre-heat foodontology:Preheat)
+
+# Individual: foodontology:Preheat (foodontology:Preheat)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Preheat)
+
+# Individual: foodontology:Process (foodontology:Process)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Process)
+
+# Individual: foodontology:Reduce (foodontology:Reduce)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Reduce)
+
+# Individual: foodontology:Reheat (foodontology:Reheat)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Reheat)
+
+# Individual: foodontology:Roast (foodontology:Roast)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Roast)
+
+# Individual: foodontology:Saute (foodontology:Saute)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Saute)
+
+# Individual: foodontology:Scald (foodontology:Scald)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Scald)
+
+# Individual: foodontology:Scorching (foodontology:Scorching)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Scorching)
+
+# Individual: foodontology:Sear (foodontology:Sear)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Sear)
+
+# Individual: foodontology:Simmer (foodontology:Simmer)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Simmer)
+
+# Individual: foodontology:Sizzle (foodontology:Sizzle)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Sizzle)
+
+# Individual: foodontology:Smoke (foodontology:Smoke)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Smoke)
+SameIndividual(foodontology:Smoke foodontology:Smoking)
+
+# Individual: foodontology:Smoking (foodontology:Smoking)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Smoking)
+
+# Individual: foodontology:Soften (foodontology:Soften)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Soften)
+
+# Individual: foodontology:Splutter (foodontology:Splutter)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Splutter)
+
+# Individual: foodontology:Steam (foodontology:Steam)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Steam)
+
+# Individual: foodontology:Sterilize (foodontology:Sterilize)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Sterilize)
+
+# Individual: foodontology:Stew (foodontology:Stew)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Stew)
+
+# Individual: foodontology:Stir-fry (foodontology:Stir-fry)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Stir-fry)
+
+# Individual: foodontology:Sweat (foodontology:Sweat)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Sweat)
+
+# Individual: foodontology:Thaw (foodontology:Thaw)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Thaw)
+
+# Individual: foodontology:Toast (foodontology:Toast)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Toast)
+
+# Individual: foodontology:Warm (foodontology:Warm)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Warm)
+
+# Individual: foodontology:Wilt (foodontology:Wilt)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Wilt)
+
+# Individual: foodontology:Wok (foodontology:Wok)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#HeatingProcess> foodontology:Wok)
+
+# Individual: foodontology:Wrapping_Supplies (foodontology:Wrapping_Supplies)
+
+ClassAssertion(<https://cosylab.iiitd.edu.in/foodontology/#StoringUtensils> foodontology:Wrapping_Supplies)
+
+
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#hasFlavorMolecule> <https://cosylab.iiitd.edu.in/foodontology/#FlavorMoleculeProfile>) <https://cosylab.iiitd.edu.in/foodontology/#NaturalSource>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#dct:identifier> <https://cosylab.iiitd.edu.in/foodontology/#RecipeURL>) <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#dct:source> <https://cosylab.iiitd.edu.in/foodontology/#NaturalSource>) <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#om:hasPhenomenon> <https://cosylab.iiitd.edu.in/foodontology/#State>) <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#om:hasValue> <https://cosylab.iiitd.edu.in/foodontology/#Temperature>) <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:category> <https://cosylab.iiitd.edu.in/foodontology/#IngredientCategory>) <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:cookTime> <https://cosylab.iiitd.edu.in/foodontology/#CookingTIme>) <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:cookingMethod> <https://cosylab.iiitd.edu.in/foodontology/#CookingProcess>) <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:description> <https://cosylab.iiitd.edu.in/foodontology/#Description>) <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:nutrition> <https://cosylab.iiitd.edu.in/foodontology/#NutritionProfile>) <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeCategory> <https://cosylab.iiitd.edu.in/foodontology/#RecipeCategory>) <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:recipeYield> <https://cosylab.iiitd.edu.in/foodontology/#Servings>) <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:unitText> <https://cosylab.iiitd.edu.in/foodontology/#Unit>) <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:url> <https://cosylab.iiitd.edu.in/foodontology/#IngredientURL>) <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:value> <https://cosylab.iiitd.edu.in/foodontology/#Quantity>) <https://cosylab.iiitd.edu.in/foodontology/#Ingredient>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#schema:%20tool> <https://cosylab.iiitd.edu.in/foodontology/#Utensils>) <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+SubClassOf(ObjectSomeValuesFrom(<https://cosylab.iiitd.edu.in/foodontology/#sioc:link> <https://cosylab.iiitd.edu.in/foodontology/#RecipeImageURL>) <https://cosylab.iiitd.edu.in/foodontology/#Recipe>)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483739 "499.9569209440142"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483739 "39.64972682639245"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483739 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483740 "630.230782710964"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483740 "759.7724327507138"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483740 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483741 "360.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483741 "550.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483741 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483742 "290.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483742 "100.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483742 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483743 "690.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483743 "0.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483743 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483744 "110.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483744 "90.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483744 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483745 "300.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483745 "800.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483745 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483746 "140.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483746 "780.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483746 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483747 "-30.264827093159596"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483747 "690.4434115917736"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483747 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483748 "110.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483748 "650.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483748 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483749 "490.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483749 "90.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483749 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483750 "150.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483750 "0.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483750 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483751 "709.9708469244499"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483751 "670.0597039664273"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483751 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483752 "0.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483752 "540.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483752 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483753 "690.3814997514766"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483753 "580.2653240195158"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483753 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483754 "549.864170242821"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483754 "800.3770802461141"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483754 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483755 "-30.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483755 "410.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483755 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483756 "620.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483756 "510.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483756 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483757 "390.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483757 "180.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483757 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483758 "739.6526802327068"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483758 "380.3490782044827"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483758 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483759 "650.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483759 "200.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483759 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483760 "429.889889134261"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483760 "730.4201665866574"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483760 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483761 "770.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483761 "490.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483761 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483762 "640.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483762 "460.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483762 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483763 "499.9575976896389"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483763 "579.6338201007981"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483763 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483764 "340.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483764 "230.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483764 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483765 "570.0864483432474"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483765 "700.0286036291849"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483765 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483766 "229.75238585471533"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483766 "499.7039091445454"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483766 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483767 "390.15414780612815"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483767 "40.09627430621708"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483767 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483768 "200.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483768 "340.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483768 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483769 "540.3108442277425"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483769 "340.0575826407056"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483769 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483770 "520.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483770 "280.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483770 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483771 "340.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483771 "430.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483771 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483772 "159.95100899543309"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483772 "219.74690961068484"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483772 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483773 "80.02159997596155"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483773 "799.7395958966365"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483773 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483774 "530.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483774 "550.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483774 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483775 "360.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483775 "620.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483775 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483776 "-20.319629308775916"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483776 "619.7573227699875"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483776 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483777 "230.414239273186"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483777 "689.5698166026273"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483777 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483778 "720.2653590906093"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483778 "49.773199595933136"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483778 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483779 "740.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483779 "140.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483779 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483780 "-10.328763829289983"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483780 "760.1205540782344"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483780 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483781 "340.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483781 "0.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483781 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483782 "140.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483782 "160.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483782 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483783 "20.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483783 "20.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483783 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483784 "90.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483784 "580.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483784 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483785 "620.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483785 "400.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483785 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483786 "140.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483786 "350.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483786 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483787 "0.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483787 "160.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483787 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483788 "410.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483788 "370.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483788 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483789 "719.6213660826357"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483789 "289.5258533445424"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483789 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483790 "-0.4973290016239833"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483790 "270.1442918571663"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483790 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483791 "309.8524609221148"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483791 "300.10364069401106"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483791 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483792 "750.4357092669669"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483792 "430.2627273505756"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483792 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483793 "90.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483793 "310.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483793 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483794 "129.583644525798"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483794 "500.0316965342861"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483794 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483795 "580.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483795 "440.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483795 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+AnnotationAssertion(opla-sd:entityPositionX _:genid2147483796 "590.0"^^xsd:double)
+AnnotationAssertion(opla-sd:entityPositionY _:genid2147483796 "450.0"^^xsd:double)
+AnnotationAssertion(rdfs:comment _:genid2147483796 "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en)
+)
