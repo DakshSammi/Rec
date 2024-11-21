@@ -1,0 +1,2411 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://cosylab.iiitd.edu.in/foodontology/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://cosylab.iiitd.edu.in/foodontology/">
+    <Prefix name="" IRI="http://www./"/>
+    <Prefix name="om" IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="sioc" IRI="http://rdfs.org/sioc/ns#link"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
+    <Prefix name="opla-sd" IRI="http://ontologydesignpatterns.org/opla-sd#"/>
+    <Prefix name="foodontology" IRI="https://cosylab.iiitd.edu.in/foodontology/"/>
+    <Declaration>
+        <Class IRI="Sub-region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Calories"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carbohydrate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CookingProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CookingTIme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CookingUtensils"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoolingProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CuttingTools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EatingUtensils"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlavorMoleculeName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlavorMoleculeProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlavorProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ingredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IngredientCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IngredientURL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LactoVegetarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lipid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasuringTools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MechanicalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MixingTools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalSourceURL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NutritionProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OvoLactoVegetarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OvoVegetarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pescetarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreparationTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreparationUtensils"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecipeCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecipeImageURL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecipeURL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServingUtensils"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Servings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecializedCookingTools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StoringUtensils"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TotalTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utensils"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:url"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasNutritionProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFlavorMolecule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dct:identifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dct:source"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#om:hasPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#om:hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#om:hasValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:additionalType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:amount"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:category"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:conatinedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:containedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:cookTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:cookingMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:countryOfOrigin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:description"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:nutrition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:prepTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:recipeCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:recipeInstructions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:recipeYield"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:tool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:totalTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:unitText"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:url"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schema:%20tool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sioc:link"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ingredientID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="recipeID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#flavormoleculeID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nutritionprofileID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Bake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Barbecue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Blanch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Boil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Braise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Broil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Bubble"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Bubbling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Burn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Caramelize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Char"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Condensed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Cook"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="CrockPot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DeepFry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Defrost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Dry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Evaporate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Evaporated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Foam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Heat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Melt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Overcook"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Pan-fry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Pans"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Parboil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Poach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Pop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Pots"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Pre-heat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Preheat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Process"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Reduce"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Reheat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Roast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Saute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Scald"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Scorching"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Sear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Simmer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Sizzle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Smoke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Smoking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Soften"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Splutter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Steam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Sterilize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Stew"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Stir-fry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Sweat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Thaw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Toast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Warm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Wilt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Wok"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Wrapping_Supplies"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="Sub-region"/>
+        <Class IRI="#Country"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#BiologicalProcess"/>
+        <Class IRI="#CookingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Calories"/>
+        <Class IRI="#NutritionProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carbohydrate"/>
+        <Class IRI="#NutritionProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalProcess"/>
+        <Class IRI="#CookingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CookingTIme"/>
+        <Class IRI="#TotalTime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CookingUtensils"/>
+        <Class IRI="#Utensils"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoolingProcess"/>
+        <Class IRI="#CookingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CuttingTools"/>
+        <Class IRI="#PreparationUtensils"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EatingUtensils"/>
+        <Class IRI="#Utensils"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Energy"/>
+        <Class IRI="#NutritionProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlavorMoleculeName"/>
+        <Class IRI="#FlavorMoleculeProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlavorProfile"/>
+        <Class IRI="#FlavorMoleculeProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingProcess"/>
+        <Class IRI="#CookingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#dct:source"/>
+            <Class IRI="#NaturalSource"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#om:hasPhenomenon"/>
+            <Class IRI="#State"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#om:hasValue"/>
+            <Class IRI="#Temperature"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#schema:category"/>
+            <Class IRI="#IngredientCategory"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#schema:unitText"/>
+            <Class IRI="#Unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#schema:url"/>
+            <Class IRI="#IngredientURL"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#schema:value"/>
+            <Class IRI="#Quantity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LactoVegetarian"/>
+        <Class IRI="#RecipeCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lipid"/>
+        <Class IRI="#NutritionProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasuringTools"/>
+        <Class IRI="#PreparationUtensils"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicalProcess"/>
+        <Class IRI="#CookingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MixingTools"/>
+        <Class IRI="#PreparationUtensils"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalSource"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasFlavorMolecule"/>
+            <Class IRI="#FlavorMoleculeProfile"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvoLactoVegetarian"/>
+        <Class IRI="#RecipeCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OvoVegetarian"/>
+        <Class IRI="#RecipeCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pescetarian"/>
+        <Class IRI="#RecipeCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparationTime"/>
+        <Class IRI="#TotalTime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparationUtensils"/>
+        <Class IRI="#Utensils"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protein"/>
+        <Class IRI="#NutritionProfile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recipe"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#dct:identifier"/>
+            <Class IRI="#RecipeURL"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recipe"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#schema:cookTime"/>
+            <Class IRI="#CookingTIme"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recipe"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#schema:cookingMethod"/>
+            <Class IRI="#CookingProcess"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recipe"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#schema:nutrition"/>
+            <Class IRI="#NutritionProfile"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recipe"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#schema:recipeCategory"/>
+            <Class IRI="#RecipeCategory"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recipe"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#schema:recipeYield"/>
+            <Class IRI="#Servings"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recipe"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#schema:%20tool"/>
+            <Class IRI="#Utensils"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recipe"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#sioc:link"/>
+            <Class IRI="#RecipeImageURL"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServingUtensils"/>
+        <Class IRI="#Utensils"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecializedCookingTools"/>
+        <Class IRI="#CookingUtensils"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StoringUtensils"/>
+        <Class IRI="#Utensils"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegan"/>
+        <Class IRI="#RecipeCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFlavorMolecule"/>
+            <Class IRI="#FlavorMoleculeProfile"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#NaturalSource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#dct:identifier"/>
+            <Class IRI="#RecipeURL"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#dct:source"/>
+            <Class IRI="#NaturalSource"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#om:hasPhenomenon"/>
+            <Class IRI="#State"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#om:hasValue"/>
+            <Class IRI="#Temperature"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#schema:category"/>
+            <Class IRI="#IngredientCategory"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#schema:cookTime"/>
+            <Class IRI="#CookingTIme"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#schema:cookingMethod"/>
+            <Class IRI="#CookingProcess"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#schema:description"/>
+            <Class IRI="#Description"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#schema:nutrition"/>
+            <Class IRI="#NutritionProfile"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#schema:recipeCategory"/>
+            <Class IRI="#RecipeCategory"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#schema:recipeYield"/>
+            <Class IRI="#Servings"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#schema:unitText"/>
+            <Class IRI="#Unit"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#schema:url"/>
+            <Class IRI="#IngredientURL"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#schema:value"/>
+            <Class IRI="#Quantity"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#schema:%20tool"/>
+            <Class IRI="#Utensils"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#sioc:link"/>
+            <Class IRI="#RecipeImageURL"/>
+        </ObjectSomeValuesFrom>
+        <Class IRI="#Recipe"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Bake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Barbecue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Blanch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Boil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Braise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Broil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Bubble"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Bubbling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Burn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Caramelize"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Char"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Condensed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Cook"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="CrockPot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="DeepFry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Defrost"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Dry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Evaporate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Evaporated"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Foam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Heat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Melt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Overcook"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Pan-fry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CookingUtensils"/>
+        <NamedIndividual IRI="Pans"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Parboil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Poach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Pop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CookingUtensils"/>
+        <NamedIndividual IRI="Pots"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Pre-heat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Preheat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Process"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Reduce"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Reheat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Roast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Saute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Scald"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Scorching"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Sear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Simmer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Sizzle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Smoke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Smoking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Soften"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Splutter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Steam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Sterilize"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Stew"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Stir-fry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Sweat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Thaw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Toast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Warm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Wilt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HeatingProcess"/>
+        <NamedIndividual IRI="Wok"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StoringUtensils"/>
+        <NamedIndividual IRI="Wrapping_Supplies"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="Bubble"/>
+        <NamedIndividual IRI="Bubbling"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="Evaporate"/>
+        <NamedIndividual IRI="Evaporated"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="Pre-heat"/>
+        <NamedIndividual IRI="Preheat"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="Smoke"/>
+        <NamedIndividual IRI="Smoking"/>
+    </SameIndividual>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:url"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:url"/>
+        <Class IRI="#NaturalSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasNutritionProfile"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFlavorMolecule"/>
+        <Class IRI="#NaturalSource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dct:identifier"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dct:source"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#om:hasPhenomenon"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#om:hasValue"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:category"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:conatinedIn"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:containedIn"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:cookTime"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:cookingMethod"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:countryOfOrigin"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:description"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:nutrition"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:recipeCategory"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:recipeInstructions"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:recipeYield"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:unitText"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:url"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:value"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schema:%20tool"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sioc:link"/>
+        <Class IRI="#Recipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:url"/>
+        <Class IRI="#NaturalSourceURL"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasNutritionProfile"/>
+        <Class IRI="#NutritionProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFlavorMolecule"/>
+        <Class IRI="#FlavorMoleculeProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dct:identifier"/>
+        <Class IRI="#RecipeURL"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dct:source"/>
+        <Class IRI="#NaturalSource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#om:hasPhenomenon"/>
+        <Class IRI="#State"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#om:hasValue"/>
+        <Class IRI="#Temperature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:category"/>
+        <Class IRI="#IngredientCategory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:conatinedIn"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:containedIn"/>
+        <Class IRI="#Continent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:cookTime"/>
+        <Class IRI="#CookingTIme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:cookingMethod"/>
+        <Class IRI="#CookingProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:countryOfOrigin"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:description"/>
+        <Class IRI="#Description"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:nutrition"/>
+        <Class IRI="#NutritionProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:recipeCategory"/>
+        <Class IRI="#RecipeCategory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:recipeInstructions"/>
+        <Class IRI="#Description"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:recipeYield"/>
+        <Class IRI="#Servings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:unitText"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:url"/>
+        <Class IRI="#IngredientURL"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:value"/>
+        <Class IRI="#Quantity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schema:%20tool"/>
+        <Class IRI="#Utensils"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sioc:link"/>
+        <Class IRI="#RecipeImageURL"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="ingredientID"/>
+        <Class IRI="#Ingredient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="recipeID"/>
+        <Class IRI="#Recipe"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#flavormoleculeID"/>
+        <Class IRI="#FlavorMoleculeProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nutritionprofileID"/>
+        <Class IRI="#NutritionProfile"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="ingredientID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="recipeID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#flavormoleculeID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nutritionprofileID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>Sub-region</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483792"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>ingredientID</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483763"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>recipeID</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483766"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#BiologicalProcess</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483787"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Calories</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483780"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Carbohydrate</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483746"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#ChemicalProcess</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483781"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Continent</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483785"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#CookingProcess</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483744"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#CookingTIme</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483758"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#CookingUtensils</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483739"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#CoolingProcess</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483783"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Country</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483761"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#CuttingTools</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483772"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Description</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483741"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#EatingUtensils</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483749"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Energy</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483747"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#FlavorMoleculeName</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483752"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#FlavorMoleculeProfile</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483755"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#FlavorProfile</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483790"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#HeatingProcess</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483750"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Ingredient</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483775"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#IngredientCategory</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483753"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#IngredientURL</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483751"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#LactoVegetarian</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483788"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Lipid</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483773"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#MeasuringTools</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483742"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#MechanicalProcess</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483782"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#MixingTools</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483767"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#NaturalSource</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483745"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#NaturalSourceURL</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483754"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#NutritionProfile</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483748"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#OvoLactoVegetarian</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483764"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#OvoVegetarian</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483770"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Pescetarian</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483793"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#PreparationTime</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483789"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#PreparationUtensils</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483757"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Protein</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483776"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Quantity</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483777"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Recipe</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483771"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#RecipeCategory</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483791"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#RecipeImageURL</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483756"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#RecipeURL</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483774"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Region</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483762"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#ServingUtensils</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483779"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Servings</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483768"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#SpecializedCookingTools</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483743"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#State</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483760"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#StoringUtensils</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483778"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Temperature</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483740"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#TotalTime</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483769"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Unit</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483765"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#Utensils</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483759"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#flavormoleculeID</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483786"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPosition"/>
+        <IRI>#nutritionprofileID</IRI>
+        <AnonymousIndividual nodeID="_:genid2147483784"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483739"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">499.9569209440142</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483739"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">39.64972682639245</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483739"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483740"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">630.230782710964</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483740"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">759.7724327507138</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483740"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483741"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">360.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483741"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">550.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483741"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483742"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">290.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483742"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">100.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483742"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483743"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">690.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483743"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483743"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483744"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">110.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483744"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">90.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483744"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483745"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">300.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483745"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">800.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483745"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483746"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">140.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483746"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">780.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483746"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483747"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-30.264827093159596</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483747"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">690.4434115917736</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483747"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483748"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">110.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483748"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">650.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483748"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483749"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">490.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483749"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">90.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483749"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483750"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">150.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483750"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483750"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483751"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">709.9708469244499</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483751"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">670.0597039664273</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483751"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483752"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483752"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">540.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483752"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483753"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">690.3814997514766</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483753"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">580.2653240195158</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483753"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483754"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">549.864170242821</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483754"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">800.3770802461141</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483754"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483755"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-30.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483755"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">410.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483755"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483756"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">620.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483756"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">510.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483756"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483757"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">390.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483757"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">180.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483757"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483758"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">739.6526802327068</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483758"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">380.3490782044827</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483758"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483759"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">650.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483759"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">200.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483759"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483760"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">429.889889134261</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483760"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">730.4201665866574</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483760"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483761"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">770.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483761"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">490.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483761"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483762"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">640.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483762"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">460.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483762"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483763"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">499.9575976896389</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483763"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">579.6338201007981</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483763"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483764"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">340.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483764"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">230.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483764"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483765"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">570.0864483432474</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483765"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">700.0286036291849</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483765"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483766"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">229.75238585471533</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483766"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">499.7039091445454</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483766"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483767"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">390.15414780612815</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483767"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">40.09627430621708</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483767"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483768"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">200.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483768"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">340.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483768"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483769"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">540.3108442277425</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483769"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">340.0575826407056</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483769"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483770"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">520.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483770"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">280.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483770"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483771"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">340.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483771"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">430.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483771"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483772"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">159.95100899543309</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483772"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">219.74690961068484</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483772"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483773"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">80.02159997596155</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483773"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">799.7395958966365</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483773"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483774"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">530.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483774"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">550.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483774"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483775"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">360.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483775"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">620.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483775"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483776"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-20.319629308775916</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483776"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">619.7573227699875</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483776"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483777"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">230.414239273186</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483777"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">689.5698166026273</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483777"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483778"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">720.2653590906093</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483778"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">49.773199595933136</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483778"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483779"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">740.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483779"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">140.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483779"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483780"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-10.328763829289983</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483780"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">760.1205540782344</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483780"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483781"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">340.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483781"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483781"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483782"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">140.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483782"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">160.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483782"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483783"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">20.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483783"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">20.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483783"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483784"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">90.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483784"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">580.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483784"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483785"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">620.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483785"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">400.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483785"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483786"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">140.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483786"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">350.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483786"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483787"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483787"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">160.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483787"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483788"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">410.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483788"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">370.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483788"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483789"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">719.6213660826357</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483789"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">289.5258533445424</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483789"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483790"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-0.4973290016239833</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483790"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">270.1442918571663</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483790"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483791"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">309.8524609221148</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483791"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">300.10364069401106</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483791"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483792"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">750.4357092669669</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483792"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">430.2627273505756</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483792"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483793"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">90.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483793"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">310.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483793"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483794"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">129.583644525798</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483794"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">500.0316965342861</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483794"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483795"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">580.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483795"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">440.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483795"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionX"/>
+        <AnonymousIndividual nodeID="_:genid2147483796"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">590.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="opla-sd:entityPositionY"/>
+        <AnonymousIndividual nodeID="_:genid2147483796"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">450.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483796"/>
+        <Literal xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
